@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+
+<div class="container">
+    <br><h3 class='display-2'>Damage Classification</h3>
+</div>
+<br>
+<div class="container">
+    <br>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="upload">Upload to predict</label>
+        <input type="file" id="upload" name="fileToUpload" required="true">
+        <input type="submit" value="Upload & Predict" class="btn btn-outline-primary">
+    </form>
+
+</div><br><br>
+{% if not fileupload %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endif %}
+{% if fileupload  %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 img-thumbnail" id="predict">
+            <img src="{{ url_for('static',filename='uploads/')}}{{ data['visualize'] }}" alt=""
+            width="{{ data['width'] }}" height="300">
+        </div>
+        <div class="col-md-6 img-thumbnail" id="predict">
+            <img src="{{ url_for('static',filename='prediction/')}}{{ data['visualize'] }}" alt=""
+            width="{{ data['width'] }}" height="300">
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="display-2"><strong>Order summary</strong></h3>
+                </div>
+                <br>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-condensed">
+                            <thead>
+                                <tr>
+                                    <td><strong>Item</strong></td>
+                                    <td class="text-center"><strong>Price</strong></td>
+                                    <td class="text-center"><strong>Quantity</strong></td>
+                                    <td class="text-right"><strong>Amount</strong></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for name, value in data['cost'].items() %}
+                                <tr>
+                                    <td>{{ name }}</td>
+                                    <td class="text-center">Rs. {{ value['Cost'] / value['Count'] }}</td>
+                                    <td class="text-center">{{ value['Count'] }}</td>
+                                    <td class="text-right">Rs. {{ value['Cost'] }}</td>
+                                </tr>
+                                {% endfor %}
+                                <tr>
+                                    <td class="thick-line"></td>
+                                    <td class="thick-line"></td>
+                                    <td class="thick-line text-center"><strong>Subtotal</strong></td>
+                                    <td class="thick-line text-right">Rs. {{ data['total'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="no-line"></td>
+                                    <td class="no-line"></td>
+                                    <td class="no-line text-center"><strong>Tax(10%)</strong></td>
+                                    <td class="no-line text-right">Rs. {{ data['tax'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="no-line"></td>
+                                    <td class="no-line"></td>
+                                    <td class="no-line text-center"><strong>Total</strong></td>
+                                    <td class="no-line text-right">Rs. {{ data['tax_total'] }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endif %}
+
+{% endblock %}

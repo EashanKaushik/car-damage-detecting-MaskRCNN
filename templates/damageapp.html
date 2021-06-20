@@ -1,0 +1,24 @@
+  {% extends 'base.html' %}
+
+  {% block bodyblock %}
+      <div class="container">
+          <br>
+          <h3 class="display-2">Damage Detection Application</h3>
+          <div class="mx-auto" style="width: 1000px;">
+  	        <p class="lead">
+  	            Damage Classification: This app is driven by data and machine learning model.
+  	            As soon as user upload the image, in background we have used Machine Learning Detection software to detect the damage, all this functionality is dumped into the flask app.
+
+  	            Machine Learning algorithms are data hungry algorithms, this means they thrive on more data. We constantly add more data to our algorithm to increase its accuracy. Images that you upload will be later be used to train our model as well.
+  	        </p>
+  	        <br>
+  	        <img src="{{ url_for('static',filename='images/logo-002.PNG') }}" alt="Cinque Terre" class="img-thumbnail">
+  	        <br><br>
+  	        <div align="center">
+  	            <a class="btn btn-outline-primary" href="{{ url_for('damage') }}">Try it now</a>
+  	        </div>
+  	        <br>
+      	</div>
+
+      </div>
+  {% endblock  %}

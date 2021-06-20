@@ -1,0 +1,27 @@
+  {% extends 'base.html' %}
+
+  {%block bodyblock %}
+          <div class="container">
+              <br><br>
+              <h3 class="display-2"> Welcome to <span style="color:#198b90">Maruti Suzuki Free Damage Detection Software</span></h3>
+          <br>
+  	        <div class="mx-auto" style="width: 1000px;">
+  	        	<p class="lead">
+  	        		In this software you will be able to upload images of your car and detect four types of damages that include: Dent, Scratch, Shatter and Dislocation. This software will also provide a tentative* repair cost for your vehicle. Go to the DamageApp to find more about our software and try it for your self. Types of damages detected:
+  	        	</p>
+  	        	<br>
+  	        	<p class='display-4'>Dent</p>
+  	        		<img src="{{ url_for('static',filename='images/dent.jpg') }}" class="img-thumbnail" alt="Cinque Terre">
+  	        		<br><br>
+  	        	<p class='display-4'>Scratch</p>
+  	        		<img src="{{ url_for('static',filename='images/scratch.jpg') }}" class="img-thumbnail" alt="Cinque Terre">
+  	        		<br><br>
+  	        	<p class='display-4'>Shatter</p>
+  	        		<img src="{{ url_for('static',filename='images/shatter.jpg') }}" class="img-thumbnail" alt="Cinque Terre">
+  	        		<br><br>
+  	        	<p class='display-4'>Dislocation</p>
+  	        		<img src="{{ url_for('static',filename='images/dislocation.jpg') }}" class="img-thumbnail" alt="Cinque Terre">
+  	        		<br><br>
+  	        </div>
+          </div>
+  {% endblock  %}
