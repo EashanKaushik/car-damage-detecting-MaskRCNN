@@ -6,12 +6,12 @@ Car damage detection using Mask Regional Convolution Neural Network
 - Automation is the next step in the automobile industry, and a software able to detect and localize damage in the car has various real world application. In the software I have used Mask Regional Convolutional Network which is at the pinnacle of image detection techniques. Due to the complexity of the task we have used transfer learning to develop the software in three stages. Each stage adds a new layer of complexity to the task, this helps the software prioritize learning the current task. We have also used Image Augmentation, which helps the model to not over fit the training data.  We have also used various hyperparameter values which helps in finding their ideal values.
 
 # Dataset
-- Stage 1: 
-- Stage 2: 
+- Stage 1: https://www.kaggle.com/eashankaushik/car-damage-detectionstage1
+- Stage 2: https://www.kaggle.com/eashankaushik/car-damage-detectionstage2
 - Stage 3: https://www.kaggle.com/eashankaushik/car-damage-detection
 
 # Image Annotation
-- ![image](https://user-images.githubusercontent.com/50113394/122675966-8302e900-d1f9-11eb-8623-3a94ac231d7a.png)
+<br>![image](https://user-images.githubusercontent.com/50113394/122675966-8302e900-d1f9-11eb-8623-3a94ac231d7a.png)
 - ![image](https://user-images.githubusercontent.com/50113394/122676009-9dd55d80-d1f9-11eb-99aa-7525630aa98b.png)
 
 # Annotated File
@@ -51,3 +51,5 @@ Car damage detection using Mask Regional Convolution Neural Network
 
 Connect with me on linkedin if you have some doubts regarding the training and deployment of the project.
 - https://www.linkedin.com/in/eashan-kaushik-7b4454168/
+
+I will soon be writing an article on medium regarding training of MaskRCNN model. 
