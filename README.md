@@ -85,12 +85,12 @@ Car damage detection using Mask Regional Convolution Neural Network
  
  8) Run app.py file and the website will be hosted on http://127.0.0.1:5000/
  
-'''
+ ```python
 app.add_url_rule('/base','base',views.base)
 app.add_url_rule('/','index',views.index)
 app.add_url_rule('/damageapp','damageapp',views.damageapp)
 app.add_url_rule('/damageapp/damage','damage',views.damage,methods=['GET','POST'])
-'''
+```
 
 # Reference
 
