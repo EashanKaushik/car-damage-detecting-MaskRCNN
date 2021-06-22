@@ -11,8 +11,14 @@ Car damage detection using Mask Regional Convolution Neural Network
 - Stage 3: https://www.kaggle.com/eashankaushik/car-damage-detection
 
 # Image Annotation
-<br> <center> ![image](https://user-images.githubusercontent.com/50113394/122675966-8302e900-d1f9-11eb-8623-3a94ac231d7a.png)</center>
-<br> <center> ![image](https://user-images.githubusercontent.com/50113394/122676009-9dd55d80-d1f9-11eb-99aa-7525630aa98b.png)</center>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/50113394/122675966-8302e900-d1f9-11eb-8623-3a94ac231d7a.png" />
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/50113394/122676009-9dd55d80-d1f9-11eb-99aa-7525630aa98b.png" />
+</p>
 
 # Annotated File
 - ![image](https://user-images.githubusercontent.com/50113394/122676016-a168e480-d1f9-11eb-97f4-dbde52f7821f.png)
