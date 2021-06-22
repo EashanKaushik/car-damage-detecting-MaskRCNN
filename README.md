@@ -26,6 +26,12 @@ Car damage detection using Mask Regional Convolution Neural Network
   <img src="https://user-images.githubusercontent.com/50113394/122676016-a168e480-d1f9-11eb-97f4-dbde52f7821f.png" />
 </p>
 
+# Stages
+
+1) Stage 1- In stage 1 I trainined the model on 'Damage' class and, used images annotated with bounding boxes.
+2) Stage 2- In this stage training was done using four classes: damage-1 (scratch), damage-2 (dent), damage-3 (shatter) and damage-4(dislocation), in this stage I used images annotated with bounding boxes as well.
+3) Stage 3- Stage 3 used images annotated with polygons, and four classes namely Scratch, Dent, Shatter and Dislocation. 
+
 # Hyper Parameter Values
 - You can use the following hyper parameter values to train your model. I found these values to give the best results.
 
@@ -69,24 +75,24 @@ Car damage detection using Mask Regional Convolution Neural Network
   <img src="https://user-images.githubusercontent.com/50113394/122676186-82b71d80-d1fa-11eb-88cc-708786320ba3.png" />
 </p>
 
-# Steps Model Training
- 1) Go in model-training directory, in the master file you will be able to find the code for all three stages. (I will soon write a blog on medium on training of MaskRCNN model)
+# Steps to Implement the Project
+ 1) Go in model-training directory, in the master notebook you will be able to find the code for training of all three stages.
  
- 2) Install necessary requirements from requirements.txt
+ 2) Install necessary requirements from requirements.txt, use the following pip command.
  
  ```
  pip install -r requirements.txt
  ```
  
- 4) You can train the model on just stage-1, stage-2 and stage-3. Dataset for each stage code is provided.
+ 3) You can train the model on any of the given stages stage-1, stage-2 and stage-3. Dataset used in training of each stage stage is provided.
  
- 5) Download the maskrcnn coco weights from https://github.com/matterport/Mask_RCNN, and train the model on these weights. 
+ 4) Download the maskrcnn coco weights from https://github.com/matterport/Mask_RCNN, and train the model on these weights.
  
- 6) Put the weights after getting desired reults in model directory. 
+ 5) Put the weights.m5 file in model directory. 
  
- 7) Change line #22 in app/utils.py to the name of the weights you have generated.
+ 6) Change line #22 in app/utils.py to the name of the weights file generated.
  
- 8) Run app.py file and the website will be hosted on http://127.0.0.1:5000/, following are url rules I have developed, you can add more according to your preference.
+ 7) Run app.py file and the website will be hosted on http://127.0.0.1:5000/, following are url rules I have developed, you can add more according to your preference.
  
  ```python
 app.add_url_rule('/base','base',views.base)
