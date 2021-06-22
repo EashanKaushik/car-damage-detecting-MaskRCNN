@@ -21,26 +21,53 @@ Car damage detection using Mask Regional Convolution Neural Network
 </p>
 
 # Annotated File
-- ![image](https://user-images.githubusercontent.com/50113394/122676016-a168e480-d1f9-11eb-97f4-dbde52f7821f.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/50113394/122676016-a168e480-d1f9-11eb-97f4-dbde52f7821f.png" />
+</p>
 
 # Hyper Parameter Values
 - You can use the following hyper parameter values to train your model. I found these values to give the best results.
-- ![image](https://user-images.githubusercontent.com/50113394/122676039-bd6c8600-d1f9-11eb-88df-3e730925708a.png)
-- ![image](https://user-images.githubusercontent.com/50113394/122676047-c78e8480-d1f9-11eb-8d4e-72e526cd1719.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/50113394/122676039-bd6c8600-d1f9-11eb-88df-3e730925708a.png" />
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/50113394/122676047-c78e8480-d1f9-11eb-8d4e-72e526cd1719.png" />
+</p>
 
 # Model Output
-- ![image](https://user-images.githubusercontent.com/50113394/122676087-fa387d00-d1f9-11eb-9bd1-bf52dfc40932.png)
-- ![image](https://user-images.githubusercontent.com/50113394/122676106-13412e00-d1fa-11eb-852c-b96c5d0e57c1.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/50113394/122676087-fa387d00-d1f9-11eb-9bd1-bf52dfc40932.png" />
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/50113394/122676106-13412e00-d1fa-11eb-852c-b96c5d0e57c1.png" />
+</p>
 
 # Deployment
-- ![image](https://user-images.githubusercontent.com/50113394/122676067-e12fcc00-d1f9-11eb-8ec7-4e704a47f83d.png)
-- ![image](https://user-images.githubusercontent.com/50113394/122676093-04f31200-d1fa-11eb-853e-202102a1b8e7.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/50113394/122676067-e12fcc00-d1f9-11eb-8ec7-4e704a47f83d.png" />
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/50113394/122676093-04f31200-d1fa-11eb-853e-202102a1b8e7.png" />
+</p>
 
 # Damage Localization
-- ![image](https://user-images.githubusercontent.com/50113394/122676130-27852b00-d1fa-11eb-8e92-2dfdcabd6457.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/50113394/122676130-27852b00-d1fa-11eb-8e92-2dfdcabd6457.png" />
+</p>
 
 # Training loss vs Validation loss
-- ![image](https://user-images.githubusercontent.com/50113394/122676186-82b71d80-d1fa-11eb-88cc-708786320ba3.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/50113394/122676186-82b71d80-d1fa-11eb-88cc-708786320ba3.png" />
+</p>
 
 # Steps Model Training
  1) Go in model-training directory, in the master file you will be able to find the code for all three stages. 
@@ -52,8 +79,10 @@ Car damage detection using Mask Regional Convolution Neural Network
  7) Run app.py file
 
 # Reference
-- For more detains on Mask RCNN check out the following link:
-- matterport/Mask_RCNN. (2021). Retrieved 1 January 2021, from https://github.com/matterport/Mask_RCNN
+
+[1] matterport/Mask_RCNN. (2021). Retrieved 1 January 2021, from https://github.com/matterport/Mask_RCNN
+
+# Connect 
 
 Connect with me on linkedin if you have some doubts regarding the training and deployment of the project.
 - https://www.linkedin.com/in/eashan-kaushik-7b4454168/
