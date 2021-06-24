@@ -2,8 +2,8 @@
 Car damage detection using Mask Regional Convolution Neural Network
 
 # Project Introduction
-- In this project I develop a software that will be able to detect four types of vehicle damages namely, Scratch, Dent, Dislocation and Scatter. Also I will provide a tentative repair cost for the type of damage detected. We will develop a website using Flask framework. Front end of the website is built using Bootstrap software.
-- Automation is the next step in the automobile industry, and a software able to detect and localize damage in the car has various real world application. In the software I have used Mask Regional Convolutional Network which is at the pinnacle of image detection techniques. Due to the complexity of the task we have used transfer learning to develop the software in three stages. Each stage adds a new layer of complexity to the task, this helps the software prioritize learning the current task. We have also used Image Augmentation, which helps the model to not over fit the training data.  We have also used various hyperparameter values which helps in finding their ideal values.
+- In this project I have developed a software that was able to detect four types of vehicle damages namely, Scratch, Dent, Dislocation and Shatter. Also I have provided a tentative repair cost for the type of damage detected. I have developed a website using Flask framework. Front end of the website is built using Bootstrap software.
+- Automation is the next step in the automobile industry, and a software which is able to detect and localize damage in the car has various real world applications. In the software I have used Mask Regional Convolutional Network which is at the pinnacle of image detection techniques. Due to the complexity of the task I have used transfer learning to develop the software in three stages. Each stage added a new layer of complexity to the task, this helped the software prioritize learning the current task. I had also used Image Augmentation, which helped the model to not over fit the training data.
 
 # Dataset
 - Stage 1: https://www.kaggle.com/eashankaushik/car-damage-detectionstage1
@@ -28,7 +28,7 @@ Car damage detection using Mask Regional Convolution Neural Network
 
 # Stages
 
-1) Stage 1- In stage 1 I trainined the model on 'Damage' class and, used images annotated with bounding boxes.
+1) Stage 1- In stage 1, I trained the model on 'Damage' class and, used images annotated with bounding boxes.
 2) Stage 2- In this stage training was done using four classes: damage-1 (scratch), damage-2 (dent), damage-3 (shatter) and damage-4(dislocation), in this stage I used images annotated with bounding boxes as well.
 3) Stage 3- Stage 3 used images annotated with polygons, and four classes namely Scratch, Dent, Shatter and Dislocation. 
 
@@ -76,7 +76,7 @@ Car damage detection using Mask Regional Convolution Neural Network
 </p>
 
 # Steps to Implement the Project
- 1) Go in model-training directory, in the master notebook you will be able to find the code for training of all three stages.
+ 1) Go to the model-training directory, in the master notebook you will be able to find the code for training of all three stages.
  
  2) Install necessary requirements from requirements.txt, use the following pip command.
  
@@ -92,7 +92,7 @@ Car damage detection using Mask Regional Convolution Neural Network
  
  6) Change line #22 in app/utils.py to the name of the weights file generated.
  
- 7) Run app.py file and the website will be hosted on http://127.0.0.1:5000/, following are url rules I have developed, you can add more according to your preference.
+ 7) Run app.py file and the website will be hosted on http://127.0.0.1:5000/, following are the url rules I have developed, you can also add more according to your preference.
  
  ```python
 app.add_url_rule('/base','base',views.base)
