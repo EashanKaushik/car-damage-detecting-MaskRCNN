@@ -76,23 +76,13 @@ Car damage detection using Mask Regional Convolution Neural Network
 </p>
 
 # Steps to Implement the Project
- 1) Go to the model-training directory, in the master notebook you will be able to find the code for training of all three stages.
+ 1) Train your model using model-training/master.ipynb notebook.
  
- 2) Install necessary requirements from requirements.txt, use the following pip command.
- 
- ```
- pip install -r requirements.txt
- ```
- 
- 3) You can train the model on any of the given stages stage-1, stage-2 and stage-3. Dataset used in training of each stage stage is provided.
- 
- 4) Download the maskrcnn coco weights from https://github.com/matterport/Mask_RCNN, and train the model on these weights.
- 
- 5) Put the weights.m5 file in model directory. 
+ 5) Put your_trained_weights.m5 file in model directory.
  
  6) Change line #22 in app/utils.py to the name of the weights file generated.
- 
- 7) Run app.py file and the website will be hosted on http://127.0.0.1:5000/, following are the url rules I have developed, you can also add more according to your preference.
+
+ 7) Run main.py file and the website will be hosted on http://127.0.0.1:5000/, following are the url rules I have developed, you can add or delete these rules according to your preference.
  
  ```python
 app.add_url_rule('/base','base',views.base)
