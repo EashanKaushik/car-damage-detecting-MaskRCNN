@@ -10,6 +10,9 @@ Car damage detection using Mask Regional Convolution Neural Network
 - Stage 2: https://www.kaggle.com/eashankaushik/car-damage-detectionstage2
 - Stage 3: https://www.kaggle.com/eashankaushik/car-damage-detection
 
+# Model Training
+For model training check out my medium post https://eashank16.medium.com/implement-your-own-mask-rcnn-model-65c994a0175d
+
 # Image Annotation
 
 <p align="center">
@@ -76,20 +79,16 @@ Car damage detection using Mask Regional Convolution Neural Network
 </p>
 
 # Steps to Implement the Project
- 1) Train your model using model-training/master.ipynb notebook.
- 
- 5) Put your_trained_weights.m5 file in model directory.
- 
- 6) Change line #22 in app/utils.py to the name of the weights file generated.
-
- 7) Run main.py file and the website will be hosted on http://127.0.0.1:5000/, following are the url rules I have developed, you can add or delete these rules according to your preference.
- 
+1) Put your_trained_weights.m5 file in the model directory.
+2) Change line #22 in app/utils.py to the name of the weights of your model.
+3) Run main.py file and the website will be hosted on http://127.0.0.1:5000/. Following are the URL rules I developed, you can add or delete these rules according to your preference.
  ```python
 app.add_url_rule('/base','base',views.base)
 app.add_url_rule('/','index',views.index)
 app.add_url_rule('/damageapp','damageapp',views.damageapp)
 app.add_url_rule('/damageapp/damage','damage',views.damage,methods=['GET','POST'])
 ```
+If you don’t want to use cost assessment functionality, just change cost_for_damage variable on line #45 of app/views.py to False. Cost assessment functionality is just for visual purposes and computes cost based on size of mask to size of image ratio.
 
 # Reference
 
@@ -99,5 +98,3 @@ app.add_url_rule('/damageapp/damage','damage',views.damage,methods=['GET','POST'
 
 Connect with me on linkedin if you have some doubts regarding the training and deployment of the project.
 - https://www.linkedin.com/in/eashan-kaushik-7b4454168/
-
-I will soon be writing an article on medium regarding training of MaskRCNN model. 
