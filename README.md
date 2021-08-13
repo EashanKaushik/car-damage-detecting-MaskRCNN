@@ -11,7 +11,7 @@ Car damage detection using Mask Regional Convolution Neural Network
 - Stage 3: https://www.kaggle.com/eashankaushik/car-damage-detection
 
 # Model Training
-For model training check out my medium post https://eashank16.medium.com/implement-your-own-mask-rcnn-model-65c994a0175d
+For model training check out my medium post https://medium.com/analytics-vidhya/implement-your-own-mask-rcnn-model-65c994a0175d
 
 # Image Annotation
 
